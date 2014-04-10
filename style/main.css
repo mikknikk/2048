@@ -47,14 +47,15 @@ h1.title {
     top: -50px;
     opacity: 0; } }
 .scores-container {
-  float: right;
-  text-align: right; }
+  width: 100%;
+}
 
 .score-container, .best-container {
+  width: 49%;
   position: relative;
   display: inline-block;
   background: #bbada0;
-  padding: 15px 25px;
+  padding: 15px 0px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
@@ -313,58 +314,93 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    color: transparent;
+    background: url('../tile-sets/tikutti/2.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    color: transparent;
+    background: url('../tile-sets/tikutti/4.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
+    color: transparent;
+    background: url('../tile-sets/tikutti/8.png'); 
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
+    color: transparent;
+    background: url('../tile-sets/tikutti/16.png'); 
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
+    color: transparent;
+    background: url('../tile-sets/tikutti/32.png'); 
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    color: transparent;
+    background: url('../tile-sets/tikutti/64.png'); 
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
+    color: transparent;
+    background: url('../tile-sets/tikutti/128.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
+    color: transparent;
+    background: url('../tile-sets/tikutti/256.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
+    color: transparent;
+    background: url('../tile-sets/tikutti/512.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
+    color: transparent;
+    background: url('../tile-sets/tikutti/1024.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
+    color: transparent;
+    background: url('../tile-sets/tikutti/2048.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -482,7 +518,7 @@ hr {
   clear: both; }
 
 .game-intro {
-  float: left;
+  text-align: center;
   line-height: 42px;
   margin-bottom: 0; }
 
@@ -490,14 +526,16 @@ hr {
   display: inline-block;
   background: #8f7a66;
   border-radius: 3px;
-  padding: 0 20px;
+  padding: 0px;
+  width: 99%;
   text-decoration: none;
   color: #f9f6f2;
-  height: 40px;
-  line-height: 42px;
+  height: 52px;
+  line-height: 52px;
   display: block;
   text-align: center;
-  float: right; }
+  margin-top: 10px;
+}
 
 .game-explanation {
   margin-top: 50px; }
